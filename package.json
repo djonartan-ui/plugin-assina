@@ -1,0 +1,45 @@
+{
+	"name": "@revela/contratos",
+	"version": "3.0.0",
+	"description": "REVELA Contratos v3 — Gutenberg blocks + REST API + React client form",
+	"private": true,
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --entry-points=./src/blocks/package/index.js,./src/blocks/proposal/index.js,./src/client-form/index.js",
+		"start": "wp-scripts start --entry-points=./src/blocks/package/index.js,./src/blocks/proposal/index.js,./src/client-form/index.js",
+		"format": "wp-scripts format",
+		"lint:js": "wp-scripts lint-js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"test": "wp-scripts test-unit-js",
+		"prettier": "wp-scripts format"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.0.0",
+		"@wordpress/block-editor": "^12.0.0",
+		"@wordpress/components": "^26.0.0",
+		"@wordpress/data": "^10.0.0",
+		"@wordpress/element": "^5.0.0",
+		"@wordpress/api-fetch": "^6.0.0",
+		"@wordpress/i18n": "^4.0.0",
+		"@wordpress/hooks": "^3.0.0",
+		"@wordpress/date": "^4.0.0",
+		"@wordpress/rich-text": "^6.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^12.0.0",
+		"@wordpress/components": "^26.0.0",
+		"@wordpress/data": "^10.0.0",
+		"@wordpress/element": "^5.0.0",
+		"@wordpress/api-fetch": "^6.0.0",
+		"@wordpress/i18n": "^4.0.0",
+		"@wordpress/date": "^4.0.0",
+		"@wordpress/rich-text": "^6.0.0"
+	},
+	"browserslist": "extends @wordpress/browserslist-config",
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
